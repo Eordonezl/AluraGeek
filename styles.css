@@ -1,0 +1,130 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #540d6e;
+    color: white;
+    text-align: center;
+    padding: 0.2rem; /* Reducir el padding para hacer el header más pequeño */
+    font-size: 1rem; /* Reducir el tamaño de la fuente */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 3rem; /* Añadir espacio para el footer */
+}
+
+footer {
+    background-color: #540d6e;
+    color: white;
+    text-align: center;
+    padding: 0.2rem; /* Reducir el padding del footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem; /* Reducir el tamaño de la fuente */
+}
+
+footer h1 {
+    margin: 0;
+    font-size: 1rem; /* Reducir el tamaño de la fuente para el título */
+}
+
+footer p {
+    margin: 0.2rem 0; /* Reducir el margen de los párrafos */
+}
+
+.product-list, .product-form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 48%;
+}
+
+.product-list h2, .product-form h2 {
+    font-size: 1.5rem;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px; /* Establecer altura fija */
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px; /* Establecer una altura fija para las imágenes */
+    object-fit: cover; /* Asegurarse de que la imagen cubra el área sin deformarse */
+}
+
+.product-card .product-info {
+    padding: 0.5rem;
+    background-color: #540d6e;
+    color: white;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; /* Evitar que el contenido se reduzca */
+}
+
+.product-card .product-info h3, .product-card .product-info p {
+    margin: 0;
+    font-size: 0.9rem; /* Ajustar el tamaño de la fuente */
+}
+
+.product-card .product-info .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem; /* Añadir padding interno al formulario */
+    border: 1px solid #540d6e; /* Añadir borde al formulario */
+    border-radius: 8px; /* Añadir bordes redondeados */
+    width: 90%; /* Ajustar el ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    background-color: #f9f9f9; /* Cambiar el color de fondo del formulario para diferenciarlo */
+}
+
+form input, form button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form button[type="submit"] {
+    background-color: #540d6e;
+    color: white;
+    cursor: pointer;
+}
+
+form button[type="reset"] {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
